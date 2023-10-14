@@ -1,0 +1,79 @@
+c:\users\hazeeb\documents\visual studio 2015\Projects\Vcafe\Vcafe\bin\Debug\Vcafe.exe.config
+c:\users\hazeeb\documents\visual studio 2015\Projects\Vcafe\Vcafe\bin\Debug\Vcafe.exe
+c:\users\hazeeb\documents\visual studio 2015\Projects\Vcafe\Vcafe\bin\Debug\Vcafe.pdb
+c:\users\hazeeb\documents\visual studio 2015\Projects\Vcafe\Vcafe\obj\Debug\Vcafe.Properties.Resources.resources
+c:\users\hazeeb\documents\visual studio 2015\Projects\Vcafe\Vcafe\obj\Debug\Vcafe.csproj.GenerateResource.Cache
+c:\users\hazeeb\documents\visual studio 2015\Projects\Vcafe\Vcafe\obj\Debug\Vcafe.exe
+c:\users\hazeeb\documents\visual studio 2015\Projects\Vcafe\Vcafe\obj\Debug\Vcafe.pdb
+C:\Users\hazeeb\documents\visual studio 2015\Projects\Vcafe\Vcafe\obj\Debug\Vcafe.Form1.resources
+C:\Users\hazeeb\documents\visual studio 2015\Projects\Vcafe\Vcafe\obj\Debug\Vcafe.inventory.resources
+C:\Users\hazeeb\documents\visual studio 2015\Projects\Vcafe\Vcafe\obj\Debug\Vcafe.view_inventory.resources
+C:\Users\hazeeb\documents\visual studio 2015\Projects\Vcafe\Vcafe\obj\Debug\Vcafe.product.resources
+C:\Users\hazeeb\Documents\Visual Studio 2015\Projects\Vcafe\Vcafe\obj\Debug\Vcafe.billing.resources
+C:\Users\hazeeb\Documents\Visual Studio 2015\Projects\Vcafe\Vcafe\obj\Debug\Vcafe.card.resources
+C:\Users\hazeeb\Documents\Visual Studio 2015\Projects\Vcafe\Vcafe\obj\Debug\Vcafe.inventroyp.resources
+C:\Users\hazeeb\Documents\Visual Studio 2015\Projects\Vcafe\Vcafe\obj\Debug\Vcafe.stock.resources
+D:\Uovt\3rd Semester\IT306031-Visual Programming II\assigenment\backup 23.06.23\Vcafe\Vcafe\bin\Debug\Vcafe.exe.config
+D:\Uovt\3rd Semester\IT306031-Visual Programming II\assigenment\backup 23.06.23\Vcafe\Vcafe\obj\Debug\Vcafe.exe
+D:\Uovt\3rd Semester\IT306031-Visual Programming II\assigenment\backup 23.06.23\Vcafe\Vcafe\obj\Debug\Vcafe.pdb
+D:\Uovt\3rd Semester\IT306031-Visual Programming II\assigenment\backup 23.06.23\Vcafe\Vcafe\bin\Debug\Vcafe.exe
+D:\Uovt\3rd Semester\IT306031-Visual Programming II\assigenment\backup 23.06.23\Vcafe\Vcafe\bin\Debug\Vcafe.pdb
+D:\Uovt\3rd Semester\IT306031-Visual Programming II\assigenment\backup 23.06.23\Vcafe\Vcafe\bin\Debug\CrystalDecisions.CrystalReports.Engine.dll
+D:\Uovt\3rd Semester\IT306031-Visual Programming II\assigenment\backup 23.06.23\Vcafe\Vcafe\bin\Debug\CrystalDecisions.ReportSource.dll
+D:\Uovt\3rd Semester\IT306031-Visual Programming II\assigenment\backup 23.06.23\Vcafe\Vcafe\bin\Debug\CrystalDecisions.Shared.dll
+D:\Uovt\3rd Semester\IT306031-Visual Programming II\assigenment\backup 23.06.23\Vcafe\Vcafe\bin\Debug\CrystalDecisions.ReportAppServer.DataDefModel.dll
+D:\Uovt\3rd Semester\IT306031-Visual Programming II\assigenment\backup 23.06.23\Vcafe\Vcafe\bin\Debug\CrystalDecisions.ReportAppServer.ClientDoc.dll
+D:\Uovt\3rd Semester\IT306031-Visual Programming II\assigenment\backup 23.06.23\Vcafe\Vcafe\bin\Debug\CrystalDecisions.ReportAppServer.ReportDefModel.dll
+D:\Uovt\3rd Semester\IT306031-Visual Programming II\assigenment\backup 23.06.23\Vcafe\Vcafe\bin\Debug\CrystalDecisions.ReportAppServer.Controllers.dll
+D:\Uovt\3rd Semester\IT306031-Visual Programming II\assigenment\backup 23.06.23\Vcafe\Vcafe\bin\Debug\CrystalDecisions.ReportAppServer.CommLayer.dll
+D:\Uovt\3rd Semester\IT306031-Visual Programming II\assigenment\backup 23.06.23\Vcafe\Vcafe\bin\Debug\CrystalDecisions.ReportAppServer.DataSetConversion.dll
+D:\Uovt\3rd Semester\IT306031-Visual Programming II\assigenment\backup 23.06.23\Vcafe\Vcafe\bin\Debug\CrystalDecisions.ReportAppServer.Prompting.dll
+D:\Uovt\3rd Semester\IT306031-Visual Programming II\assigenment\backup 23.06.23\Vcafe\Vcafe\bin\Debug\CrystalDecisions.ReportAppServer.XmlSerialize.dll
+D:\Uovt\3rd Semester\IT306031-Visual Programming II\assigenment\backup 23.06.23\Vcafe\Vcafe\bin\Debug\CrystalDecisions.ReportAppServer.CubeDefModel.dll
+D:\Uovt\3rd Semester\IT306031-Visual Programming II\assigenment\backup 23.06.23\Vcafe\Vcafe\bin\Debug\CrystalDecisions.ReportAppServer.CommonObjectModel.dll
+D:\Uovt\3rd Semester\IT306031-Visual Programming II\assigenment\backup 23.06.23\Vcafe\Vcafe\bin\Debug\CrystalDecisions.ReportAppServer.ObjectFactory.dll
+D:\Uovt\3rd Semester\IT306031-Visual Programming II\assigenment\backup 23.06.23\Vcafe\Vcafe\bin\Debug\CrystalDecisions.ReportAppServer.CommonControls.dll
+D:\Uovt\3rd Semester\IT306031-Visual Programming II\assigenment\backup 23.06.23\Vcafe\Vcafe\bin\Debug\stdole.dll
+D:\Uovt\3rd Semester\IT306031-Visual Programming II\assigenment\backup 23.06.23\Vcafe\Vcafe\obj\Debug\Vcafe.csprojResolveAssemblyReference.cache
+D:\Uovt\3rd Semester\IT306031-Visual Programming II\assigenment\backup 23.06.23\Vcafe\Vcafe\obj\Debug\Vcafe.billing.resources
+D:\Uovt\3rd Semester\IT306031-Visual Programming II\assigenment\backup 23.06.23\Vcafe\Vcafe\obj\Debug\Vcafe.card.resources
+D:\Uovt\3rd Semester\IT306031-Visual Programming II\assigenment\backup 23.06.23\Vcafe\Vcafe\obj\Debug\Vcafe.Form1.resources
+D:\Uovt\3rd Semester\IT306031-Visual Programming II\assigenment\backup 23.06.23\Vcafe\Vcafe\obj\Debug\Vcafe.inventory.resources
+D:\Uovt\3rd Semester\IT306031-Visual Programming II\assigenment\backup 23.06.23\Vcafe\Vcafe\obj\Debug\Vcafe.inventroyp.resources
+D:\Uovt\3rd Semester\IT306031-Visual Programming II\assigenment\backup 23.06.23\Vcafe\Vcafe\obj\Debug\Vcafe.product.resources
+D:\Uovt\3rd Semester\IT306031-Visual Programming II\assigenment\backup 23.06.23\Vcafe\Vcafe\obj\Debug\Vcafe.Properties.Resources.resources
+D:\Uovt\3rd Semester\IT306031-Visual Programming II\assigenment\backup 23.06.23\Vcafe\Vcafe\obj\Debug\Vcafe.view_inventory.resources
+D:\Uovt\3rd Semester\IT306031-Visual Programming II\assigenment\backup 23.06.23\Vcafe\Vcafe\obj\Debug\Vcafe.stock.resources
+D:\Uovt\3rd Semester\IT306031-Visual Programming II\assigenment\backup 23.06.23\Vcafe\Vcafe\obj\Debug\Vcafe.csproj.GenerateResource.Cache
+D:\Uovt\3rd Semester\IT306031-Visual Programming II\assigenment\backup 23.06.23\Vcafe\Vcafe\obj\Debug\Vcafe.View_Invoice.resources
+D:\Uovt\3rd Semester\IT306031-Visual Programming II\assigenment\backup 23.06.23\Vcafe\Vcafe\bin\Debug\CrystalDecisions.Windows.Forms.dll
+D:\Uovt\3rd Semester\IT306031-Visual Programming II\assigenment\backup 23.06.23\Vcafe\Vcafe\bin\Debug\FlashControlV71.dll
+D:\Uovt\3rd Semester\IT306031-Visual Programming II\assigenment\backup 23.06.23\Vcafe\Vcafe\bin\Debug\ShockwaveFlashObjects.dll
+C:\Users\hazeeb\Documents\Visual Studio 2015\Projects\Vcafe\Vcafe\bin\Debug\CrystalDecisions.CrystalReports.Engine.dll
+C:\Users\hazeeb\Documents\Visual Studio 2015\Projects\Vcafe\Vcafe\bin\Debug\CrystalDecisions.ReportSource.dll
+C:\Users\hazeeb\Documents\Visual Studio 2015\Projects\Vcafe\Vcafe\bin\Debug\CrystalDecisions.Shared.dll
+C:\Users\hazeeb\Documents\Visual Studio 2015\Projects\Vcafe\Vcafe\bin\Debug\CrystalDecisions.Windows.Forms.dll
+C:\Users\hazeeb\Documents\Visual Studio 2015\Projects\Vcafe\Vcafe\bin\Debug\FlashControlV71.dll
+C:\Users\hazeeb\Documents\Visual Studio 2015\Projects\Vcafe\Vcafe\bin\Debug\CrystalDecisions.ReportAppServer.DataDefModel.dll
+C:\Users\hazeeb\Documents\Visual Studio 2015\Projects\Vcafe\Vcafe\bin\Debug\CrystalDecisions.ReportAppServer.ClientDoc.dll
+C:\Users\hazeeb\Documents\Visual Studio 2015\Projects\Vcafe\Vcafe\bin\Debug\CrystalDecisions.ReportAppServer.ReportDefModel.dll
+C:\Users\hazeeb\Documents\Visual Studio 2015\Projects\Vcafe\Vcafe\bin\Debug\CrystalDecisions.ReportAppServer.Controllers.dll
+C:\Users\hazeeb\Documents\Visual Studio 2015\Projects\Vcafe\Vcafe\bin\Debug\CrystalDecisions.ReportAppServer.CommLayer.dll
+C:\Users\hazeeb\Documents\Visual Studio 2015\Projects\Vcafe\Vcafe\bin\Debug\CrystalDecisions.ReportAppServer.DataSetConversion.dll
+C:\Users\hazeeb\Documents\Visual Studio 2015\Projects\Vcafe\Vcafe\bin\Debug\CrystalDecisions.ReportAppServer.Prompting.dll
+C:\Users\hazeeb\Documents\Visual Studio 2015\Projects\Vcafe\Vcafe\bin\Debug\CrystalDecisions.ReportAppServer.XmlSerialize.dll
+C:\Users\hazeeb\Documents\Visual Studio 2015\Projects\Vcafe\Vcafe\bin\Debug\CrystalDecisions.ReportAppServer.CubeDefModel.dll
+C:\Users\hazeeb\Documents\Visual Studio 2015\Projects\Vcafe\Vcafe\bin\Debug\CrystalDecisions.ReportAppServer.CommonObjectModel.dll
+C:\Users\hazeeb\Documents\Visual Studio 2015\Projects\Vcafe\Vcafe\bin\Debug\CrystalDecisions.ReportAppServer.ObjectFactory.dll
+C:\Users\hazeeb\Documents\Visual Studio 2015\Projects\Vcafe\Vcafe\bin\Debug\ShockwaveFlashObjects.dll
+C:\Users\hazeeb\Documents\Visual Studio 2015\Projects\Vcafe\Vcafe\bin\Debug\CrystalDecisions.ReportAppServer.CommonControls.dll
+C:\Users\hazeeb\Documents\Visual Studio 2015\Projects\Vcafe\Vcafe\bin\Debug\stdole.dll
+C:\Users\hazeeb\Documents\Visual Studio 2015\Projects\Vcafe\Vcafe\obj\Debug\Vcafe.View_Invoice.resources
+C:\Users\hazeeb\Documents\Visual Studio 2015\Projects\Vcafe\Vcafe\obj\Debug\Vcafe.view_sales_summery.resources
+C:\Users\hazeeb\Documents\Visual Studio 2015\Projects\Vcafe\Vcafe\obj\Debug\Vcafe.dashboard.resources
+C:\Users\hazeeb\Documents\Visual Studio 2015\Projects\Vcafe\Vcafe\obj\Debug\Vcafe.login.resources
+C:\Users\hazeeb\Documents\Visual Studio 2015\Projects\Vcafe\Vcafe\obj\Debug\Vcafe.user_log.resources
+C:\Users\hazeeb\Documents\Visual Studio 2015\Projects\Vcafe\Vcafe\obj\Debug\Vcafe.user.resources
+C:\Users\hazeeb\Documents\Visual Studio 2015\Projects\Vcafe\Vcafe\obj\Debug\Vcafe.csprojResolveAssemblyReference.cache
+C:\Users\hazeeb\Documents\Visual Studio 2015\Projects\Vcafe\Vcafe\obj\Debug\Vcafe.dashboard_cashier.resources
+C:\Users\hazeeb\Documents\Visual Studio 2015\Projects\Vcafe\Vcafe\obj\Debug\Vcafe.dashboard_inventory.resources
