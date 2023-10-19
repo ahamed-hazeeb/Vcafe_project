@@ -31,11 +31,15 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.pnl_menu = new System.Windows.Forms.Panel();
+            this.lbl_position = new System.Windows.Forms.Label();
+            this.lbl_name = new System.Windows.Forms.Label();
+            this.pnl_main = new System.Windows.Forms.Panel();
+            this.slide = new System.Windows.Forms.Timer(this.components);
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.button2 = new System.Windows.Forms.Button();
             this.btn_user = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.btn_userlog = new System.Windows.Forms.Button();
-            this.lbl_position = new System.Windows.Forms.Label();
-            this.lbl_name = new System.Windows.Forms.Label();
             this.btn_menu = new System.Windows.Forms.Button();
             this.btn_stock = new System.Windows.Forms.Button();
             this.btn_report = new System.Windows.Forms.Button();
@@ -43,10 +47,11 @@
             this.btn_inventory = new System.Windows.Forms.Button();
             this.btn_bill = new System.Windows.Forms.Button();
             this.btn_dashbord = new System.Windows.Forms.Button();
-            this.pnl_main = new System.Windows.Forms.Panel();
-            this.slide = new System.Windows.Forms.Timer(this.components);
-            this.panel2 = new System.Windows.Forms.Panel();
+            this.panel1 = new System.Windows.Forms.Panel();
             this.pnl_menu.SuspendLayout();
+            this.pnl_main.SuspendLayout();
+            this.panel2.SuspendLayout();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // pnl_menu
@@ -66,12 +71,74 @@
             this.pnl_menu.Controls.Add(this.btn_dashbord);
             this.pnl_menu.Dock = System.Windows.Forms.DockStyle.Left;
             this.pnl_menu.Location = new System.Drawing.Point(0, 0);
-            this.pnl_menu.MaximumSize = new System.Drawing.Size(120, 900);
-            this.pnl_menu.MinimumSize = new System.Drawing.Size(55, 900);
+            this.pnl_menu.MaximumSize = new System.Drawing.Size(120, 720);
+            this.pnl_menu.MinimumSize = new System.Drawing.Size(55, 720);
             this.pnl_menu.Name = "pnl_menu";
-            this.pnl_menu.Size = new System.Drawing.Size(55, 900);
+            this.pnl_menu.Size = new System.Drawing.Size(55, 720);
             this.pnl_menu.TabIndex = 0;
             this.pnl_menu.Paint += new System.Windows.Forms.PaintEventHandler(this.pnl_menu_Paint);
+            // 
+            // lbl_position
+            // 
+            this.lbl_position.AutoSize = true;
+            this.lbl_position.Location = new System.Drawing.Point(12, 88);
+            this.lbl_position.Name = "lbl_position";
+            this.lbl_position.Size = new System.Drawing.Size(43, 13);
+            this.lbl_position.TabIndex = 4;
+            this.lbl_position.Text = "position";
+            // 
+            // lbl_name
+            // 
+            this.lbl_name.AutoSize = true;
+            this.lbl_name.Font = new System.Drawing.Font("Microsoft YaHei", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_name.Location = new System.Drawing.Point(3, 57);
+            this.lbl_name.Name = "lbl_name";
+            this.lbl_name.Size = new System.Drawing.Size(46, 19);
+            this.lbl_name.TabIndex = 3;
+            this.lbl_name.Text = "name";
+            // 
+            // pnl_main
+            // 
+            this.pnl_main.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(30)))), ((int)(((byte)(54)))));
+            this.pnl_main.Controls.Add(this.pnl_menu);
+            this.pnl_main.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pnl_main.Location = new System.Drawing.Point(0, 0);
+            this.pnl_main.Name = "pnl_main";
+            this.pnl_main.Size = new System.Drawing.Size(1298, 613);
+            this.pnl_main.TabIndex = 2;
+            this.pnl_main.Paint += new System.Windows.Forms.PaintEventHandler(this.pnl_main_Paint);
+            // 
+            // slide
+            // 
+            this.slide.Interval = 30;
+            this.slide.Tick += new System.EventHandler(this.slide_Tick);
+            // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(30)))), ((int)(((byte)(54)))));
+            this.panel2.Controls.Add(this.button2);
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel2.Location = new System.Drawing.Point(0, 0);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(1298, 42);
+            this.panel2.TabIndex = 1;
+            // 
+            // button2
+            // 
+            this.button2.Dock = System.Windows.Forms.DockStyle.Right;
+            this.button2.FlatAppearance.BorderSize = 0;
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2.ForeColor = System.Drawing.Color.White;
+            this.button2.Image = global::Vcafe.Properties.Resources.close1;
+            this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button2.Location = new System.Drawing.Point(1250, 0);
+            this.button2.Name = "button2";
+            this.button2.Padding = new System.Windows.Forms.Padding(5);
+            this.button2.Size = new System.Drawing.Size(48, 42);
+            this.button2.TabIndex = 9;
+            this.button2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // btn_user
             // 
@@ -101,7 +168,7 @@
             this.button1.ForeColor = System.Drawing.Color.White;
             this.button1.Image = global::Vcafe.Properties.Resources.logout;
             this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button1.Location = new System.Drawing.Point(0, 611);
+            this.button1.Location = new System.Drawing.Point(-3, 676);
             this.button1.MaximumSize = new System.Drawing.Size(140, 40);
             this.button1.MinimumSize = new System.Drawing.Size(70, 40);
             this.button1.Name = "button1";
@@ -133,25 +200,6 @@
             this.btn_userlog.UseVisualStyleBackColor = true;
             this.btn_userlog.Click += new System.EventHandler(this.btn_userlog_Click);
             this.btn_userlog.Leave += new System.EventHandler(this.btn_userlog_Leave);
-            // 
-            // lbl_position
-            // 
-            this.lbl_position.AutoSize = true;
-            this.lbl_position.Location = new System.Drawing.Point(12, 88);
-            this.lbl_position.Name = "lbl_position";
-            this.lbl_position.Size = new System.Drawing.Size(43, 13);
-            this.lbl_position.TabIndex = 4;
-            this.lbl_position.Text = "position";
-            // 
-            // lbl_name
-            // 
-            this.lbl_name.AutoSize = true;
-            this.lbl_name.Font = new System.Drawing.Font("Microsoft YaHei", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_name.Location = new System.Drawing.Point(3, 57);
-            this.lbl_name.Name = "lbl_name";
-            this.lbl_name.Size = new System.Drawing.Size(46, 19);
-            this.lbl_name.TabIndex = 3;
-            this.lbl_name.Text = "name";
             // 
             // btn_menu
             // 
@@ -294,38 +342,23 @@
             this.btn_dashbord.Click += new System.EventHandler(this.btn_dashbord_Click);
             this.btn_dashbord.Leave += new System.EventHandler(this.btn_dashbord_Leave);
             // 
-            // pnl_main
+            // panel1
             // 
-            this.pnl_main.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(30)))), ((int)(((byte)(54)))));
-            this.pnl_main.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pnl_main.Location = new System.Drawing.Point(55, 36);
-            this.pnl_main.Name = "pnl_main";
-            this.pnl_main.Size = new System.Drawing.Size(1243, 619);
-            this.pnl_main.TabIndex = 2;
-            this.pnl_main.Paint += new System.Windows.Forms.PaintEventHandler(this.pnl_main_Paint);
-            // 
-            // slide
-            // 
-            this.slide.Interval = 30;
-            this.slide.Tick += new System.EventHandler(this.slide_Tick);
-            // 
-            // panel2
-            // 
-            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(30)))), ((int)(((byte)(54)))));
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel2.Location = new System.Drawing.Point(55, 0);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1243, 36);
-            this.panel2.TabIndex = 1;
+            this.panel1.Controls.Add(this.pnl_main);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel1.Location = new System.Drawing.Point(0, 42);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(1298, 613);
+            this.panel1.TabIndex = 3;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1298, 655);
-            this.Controls.Add(this.pnl_main);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.panel2);
-            this.Controls.Add(this.pnl_menu);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
@@ -333,6 +366,9 @@
             this.Load += new System.EventHandler(this.Form1_Load);
             this.pnl_menu.ResumeLayout(false);
             this.pnl_menu.PerformLayout();
+            this.pnl_main.ResumeLayout(false);
+            this.panel2.ResumeLayout(false);
+            this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -355,6 +391,8 @@
         private System.Windows.Forms.Button btn_userlog;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button btn_user;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Panel panel1;
     }
 }
 

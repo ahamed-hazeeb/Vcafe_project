@@ -72,7 +72,7 @@ namespace Vcafe
         public void userlog_dis()
         {
 
-            SqlDataAdapter sqldata = new SqlDataAdapter("SELECT id as ID,uname as Name,date as Date,status as Status FROM login_info ", con);
+            SqlDataAdapter sqldata = new SqlDataAdapter("SELECT id as ID, uname as Name,date as Date,status as Status FROM login_info ", con);
             DataTable dtbl = new DataTable();
             sqldata.Fill(dtbl);
             dgv_user_log.DataSource = dtbl;
@@ -310,6 +310,11 @@ namespace Vcafe
         private void btnmonth_Click(object sender, EventArgs e)
         {
             date_("-30");
+        }
+
+        private void dgv_user_log_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
 }

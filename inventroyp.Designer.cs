@@ -102,6 +102,7 @@
             this.txt_logid.Name = "txt_logid";
             this.txt_logid.Size = new System.Drawing.Size(100, 20);
             this.txt_logid.TabIndex = 40;
+            this.txt_logid.TextChanged += new System.EventHandler(this.txt_logid_TextChanged);
             // 
             // label8
             // 
@@ -182,6 +183,7 @@
             this.txt_qty.Name = "txt_qty";
             this.txt_qty.Size = new System.Drawing.Size(100, 20);
             this.txt_qty.TabIndex = 30;
+            this.txt_qty.Text = "0";
             // 
             // txt_name
             // 

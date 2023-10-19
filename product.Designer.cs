@@ -155,9 +155,9 @@
             this.txt_sname.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(30)))), ((int)(((byte)(54)))));
             this.txt_sname.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txt_sname.ForeColor = System.Drawing.Color.DimGray;
-            this.txt_sname.Location = new System.Drawing.Point(329, 43);
+            this.txt_sname.Location = new System.Drawing.Point(343, 41);
             this.txt_sname.Name = "txt_sname";
-            this.txt_sname.Size = new System.Drawing.Size(100, 24);
+            this.txt_sname.Size = new System.Drawing.Size(136, 24);
             this.txt_sname.TabIndex = 29;
             // 
             // cmb_sget
@@ -165,9 +165,9 @@
             this.cmb_sget.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(30)))), ((int)(((byte)(54)))));
             this.cmb_sget.ForeColor = System.Drawing.Color.DimGray;
             this.cmb_sget.FormattingEnabled = true;
-            this.cmb_sget.Location = new System.Drawing.Point(134, 37);
+            this.cmb_sget.Location = new System.Drawing.Point(119, 38);
             this.cmb_sget.Name = "cmb_sget";
-            this.cmb_sget.Size = new System.Drawing.Size(80, 26);
+            this.cmb_sget.Size = new System.Drawing.Size(132, 26);
             this.cmb_sget.TabIndex = 28;
             this.cmb_sget.SelectedIndexChanged += new System.EventHandler(this.cmb_sget_SelectedIndexChanged);
             // 
@@ -190,7 +190,7 @@
             this.cmb_rtype.Items.AddRange(new object[] {
             "Item ID",
             "Name"});
-            this.cmb_rtype.Location = new System.Drawing.Point(53, 38);
+            this.cmb_rtype.Location = new System.Drawing.Point(43, 35);
             this.cmb_rtype.Name = "cmb_rtype";
             this.cmb_rtype.Size = new System.Drawing.Size(65, 26);
             this.cmb_rtype.TabIndex = 26;
@@ -201,7 +201,7 @@
             this.txt_sid.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(30)))), ((int)(((byte)(54)))));
             this.txt_sid.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txt_sid.ForeColor = System.Drawing.Color.DimGray;
-            this.txt_sid.Location = new System.Drawing.Point(243, 41);
+            this.txt_sid.Location = new System.Drawing.Point(257, 41);
             this.txt_sid.Name = "txt_sid";
             this.txt_sid.Size = new System.Drawing.Size(80, 24);
             this.txt_sid.TabIndex = 25;
@@ -260,7 +260,7 @@
             this.txtsunit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(30)))), ((int)(((byte)(54)))));
             this.txtsunit.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtsunit.ForeColor = System.Drawing.Color.DimGray;
-            this.txtsunit.Location = new System.Drawing.Point(546, 42);
+            this.txtsunit.Location = new System.Drawing.Point(595, 40);
             this.txtsunit.Name = "txtsunit";
             this.txtsunit.Size = new System.Drawing.Size(80, 24);
             this.txtsunit.TabIndex = 15;
@@ -270,7 +270,7 @@
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
             this.label5.ForeColor = System.Drawing.Color.DimGray;
-            this.label5.Location = new System.Drawing.Point(550, 14);
+            this.label5.Location = new System.Drawing.Point(599, 12);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(34, 18);
             this.label5.TabIndex = 14;
@@ -281,7 +281,7 @@
             this.txt_sqty.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(30)))), ((int)(((byte)(54)))));
             this.txt_sqty.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txt_sqty.ForeColor = System.Drawing.Color.DimGray;
-            this.txt_sqty.Location = new System.Drawing.Point(445, 42);
+            this.txt_sqty.Location = new System.Drawing.Point(494, 40);
             this.txt_sqty.Name = "txt_sqty";
             this.txt_sqty.Size = new System.Drawing.Size(80, 24);
             this.txt_sqty.TabIndex = 13;
@@ -291,7 +291,7 @@
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
             this.label6.ForeColor = System.Drawing.Color.DimGray;
-            this.label6.Location = new System.Drawing.Point(466, 14);
+            this.label6.Location = new System.Drawing.Point(515, 12);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(31, 18);
             this.label6.TabIndex = 12;

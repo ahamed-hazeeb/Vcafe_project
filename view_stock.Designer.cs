@@ -53,6 +53,7 @@
             this.label9 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.gb_stock = new System.Windows.Forms.GroupBox();
+            this.btn_refresh = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_view_stock)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.gb_stock.SuspendLayout();
@@ -262,6 +263,7 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.btn_refresh);
             this.groupBox1.Controls.Add(this.btn_filter_search);
             this.groupBox1.Controls.Add(this.txt_search);
             this.groupBox1.Controls.Add(this.cmb_type);
@@ -363,6 +365,20 @@
             this.gb_stock.TabIndex = 73;
             this.gb_stock.TabStop = false;
             // 
+            // btn_refresh
+            // 
+            this.btn_refresh.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(30)))), ((int)(((byte)(54)))));
+            this.btn_refresh.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_refresh.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_refresh.ForeColor = System.Drawing.Color.DimGray;
+            this.btn_refresh.Location = new System.Drawing.Point(552, 25);
+            this.btn_refresh.Name = "btn_refresh";
+            this.btn_refresh.Size = new System.Drawing.Size(88, 35);
+            this.btn_refresh.TabIndex = 15;
+            this.btn_refresh.Text = "Refresh";
+            this.btn_refresh.UseVisualStyleBackColor = false;
+            this.btn_refresh.Click += new System.EventHandler(this.btn_refresh_Click);
+            // 
             // stock
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -411,5 +427,6 @@
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.GroupBox gb_stock;
+        private System.Windows.Forms.Button btn_refresh;
     }
 }

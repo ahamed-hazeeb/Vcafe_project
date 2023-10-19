@@ -299,7 +299,24 @@
   <ItemGroup>
     <None Include="Resources\logout.png" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <None Include="Resources\cross.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\close.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\close1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Premium Coffee Cafe Logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Premium Coffee Cafe Logo1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Premium Coffee Cafe Logo %281%29.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

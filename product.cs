@@ -77,9 +77,10 @@ namespace Vcafe
                 {
                     MessageBox.Show("Already exiest", "Error");
                 }
-                con.Close();
+                
 
             }
+            con.Close();
         }
 
         private void btn_radd_Click(object sender, EventArgs e)
@@ -345,6 +346,7 @@ namespace Vcafe
             txt_sname.Text = "";
             txt_sqty.Text = "";
             txtsunit.Text = "";
+            con.Close();
         }
 
         private void btn_rremove_Click(object sender, EventArgs e)
@@ -362,6 +364,7 @@ namespace Vcafe
                 txt_sname.Text = "";
                 txt_sqty.Text = "";
                 txtsunit.Text = "";
+                con.Close();
             }
         }
 
@@ -370,7 +373,7 @@ namespace Vcafe
             pb_pimg.Enabled = false;
           
             con.Open();
-            //rec_dis();
+            rec_dis();
             String query_search = "select name,price,category,img from product where p_id ='" + cmb_pid.Text + "'";
             SqlCommand cmnd = new SqlCommand(query_search, con);
             SqlDataReader r = cmnd.ExecuteReader();

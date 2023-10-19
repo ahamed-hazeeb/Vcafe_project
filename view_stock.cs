@@ -33,11 +33,21 @@ namespace Vcafe
         }
         private void autoin()
         {
-
-
-            SqlCommand cmd = new SqlCommand("select max(id)+1 from stock", con);
-            int i = Convert.ToInt32(cmd.ExecuteScalar());
-            txt_id.Text = i.ToString();
+          
+            //auto get the max no in the bill information table 
+            SqlCommand cmd = new SqlCommand("select max(id)+1 from stock", con); 
+            object result = cmd.ExecuteScalar();
+            //if the  table bill_no column is not null
+            if (result != DBNull.Value)
+            {
+                int i = Convert.ToInt32(result);
+                txt_id.Text = i.ToString();
+            }
+            //if the  table bill_no column is null
+            else
+            {
+                txt_id.Text = "1";
+            }
 
         }
         public void clear()
@@ -128,6 +138,7 @@ namespace Vcafe
                     MessageBox.Show("Item Inserted Sucessfully.", "Inserted", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
                     autoin();
+                    stock_dis();
                     clear();
                  
 
@@ -140,6 +151,7 @@ namespace Vcafe
                     clear();
                 }
             }
+            con.Close();
         }
 
         private void btn_id_search_Click(object sender, EventArgs e)
@@ -195,14 +207,14 @@ namespace Vcafe
                 btn_update.Enabled = false;
 
                 int id = Convert.ToInt32(txt_id.Text);
-                int price = Convert.ToInt32(txt_uprice.Text);
+               // int price = Convert.ToInt32(txt_uprice.Text);
                 con.Open();
                
 
                 DialogResult rs = MessageBox.Show("Are You sure want to Update", "UPDATE", MessageBoxButtons.YesNo, MessageBoxIcon.Hand);
                 if (rs == DialogResult.Yes)
                 {
-                    string update_new = "update stock set  [name] = '"+txt_name.Text+"',[category]='"+cmb_category.Text+"',[unit]='"+txt_unit.Text+"',[unit_price]='"+price+"'  where id ='" + id + "'";
+                    string update_new = "update stock set  [name] = '"+txt_name.Text+"',[category]='"+cmb_category.Text+"',[unit]='"+txt_unit.Text+"',[unit_price]='"+txt_uprice.Text + "'  where id ='" + id + "'";
 
                     SqlCommand cmd2 = new SqlCommand(update_new, con);
                     cmd2.ExecuteNonQuery();
@@ -290,6 +302,12 @@ namespace Vcafe
 
         }
 
+        private void btn_refresh_Click(object sender, EventArgs e)
+        {
+            con.Open();
+            stock_dis();
+            con.Close();
+        }
     }
 }
 

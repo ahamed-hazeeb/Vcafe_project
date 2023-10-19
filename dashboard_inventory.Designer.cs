@@ -44,8 +44,14 @@
             this.lblcus = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.lbl_inven = new System.Windows.Forms.Label();
+            this.dgv_stock_qty = new System.Windows.Forms.DataGridView();
+            this.label1 = new System.Windows.Forms.Label();
+            this.dgv_selling_p = new System.Windows.Forms.DataGridView();
+            this.label2 = new System.Windows.Forms.Label();
             this.panel2.SuspendLayout();
             this.groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_stock_qty)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_selling_p)).BeginInit();
             this.SuspendLayout();
             // 
             // panel2
@@ -60,7 +66,7 @@
             this.panel2.Controls.Add(this.label3);
             this.panel2.Location = new System.Drawing.Point(101, 32);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(747, 147);
+            this.panel2.Size = new System.Drawing.Size(794, 147);
             this.panel2.TabIndex = 4;
             // 
             // groupBox1
@@ -73,9 +79,9 @@
             this.groupBox1.Controls.Add(this.btn_get);
             this.groupBox1.Controls.Add(this.date_start);
             this.groupBox1.ForeColor = System.Drawing.Color.DimGray;
-            this.groupBox1.Location = new System.Drawing.Point(181, 23);
+            this.groupBox1.Location = new System.Drawing.Point(171, 26);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(286, 87);
+            this.groupBox1.Size = new System.Drawing.Size(299, 87);
             this.groupBox1.TabIndex = 8;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Search from Date";
@@ -131,14 +137,16 @@
             // 
             // btn_get
             // 
+            this.btn_get.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(30)))), ((int)(((byte)(20)))));
             this.btn_get.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_get.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_get.ForeColor = System.Drawing.Color.DimGray;
-            this.btn_get.Location = new System.Drawing.Point(202, 21);
+            this.btn_get.Location = new System.Drawing.Point(211, 17);
             this.btn_get.Name = "btn_get";
-            this.btn_get.Size = new System.Drawing.Size(79, 36);
+            this.btn_get.Size = new System.Drawing.Size(82, 45);
             this.btn_get.TabIndex = 6;
             this.btn_get.Text = "Get";
-            this.btn_get.UseVisualStyleBackColor = true;
+            this.btn_get.UseVisualStyleBackColor = false;
             this.btn_get.Click += new System.EventHandler(this.btn_get_Click);
             // 
             // date_start
@@ -155,38 +163,44 @@
             // 
             // btday
             // 
+            this.btday.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(30)))), ((int)(((byte)(20)))));
             this.btday.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btday.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btday.ForeColor = System.Drawing.Color.DimGray;
-            this.btday.Location = new System.Drawing.Point(473, 41);
+            this.btday.Location = new System.Drawing.Point(476, 38);
             this.btday.Name = "btday";
-            this.btday.Size = new System.Drawing.Size(75, 39);
+            this.btday.Size = new System.Drawing.Size(77, 54);
             this.btday.TabIndex = 6;
             this.btday.Text = "last day";
-            this.btday.UseVisualStyleBackColor = true;
+            this.btday.UseVisualStyleBackColor = false;
             this.btday.Click += new System.EventHandler(this.btday_Click);
             // 
             // btnmonth
             // 
+            this.btnmonth.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(30)))), ((int)(((byte)(20)))));
             this.btnmonth.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnmonth.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnmonth.ForeColor = System.Drawing.Color.DimGray;
-            this.btnmonth.Location = new System.Drawing.Point(639, 41);
+            this.btnmonth.Location = new System.Drawing.Point(684, 38);
             this.btnmonth.Name = "btnmonth";
-            this.btnmonth.Size = new System.Drawing.Size(75, 39);
+            this.btnmonth.Size = new System.Drawing.Size(93, 54);
             this.btnmonth.TabIndex = 6;
             this.btnmonth.Text = "Last Moth";
-            this.btnmonth.UseVisualStyleBackColor = true;
+            this.btnmonth.UseVisualStyleBackColor = false;
             this.btnmonth.Click += new System.EventHandler(this.btnmonth_Click);
             // 
             // btn7day
             // 
+            this.btn7day.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(30)))), ((int)(((byte)(20)))));
             this.btn7day.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn7day.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn7day.ForeColor = System.Drawing.Color.DimGray;
-            this.btn7day.Location = new System.Drawing.Point(556, 41);
+            this.btn7day.Location = new System.Drawing.Point(566, 37);
             this.btn7day.Name = "btn7day";
-            this.btn7day.Size = new System.Drawing.Size(75, 39);
+            this.btn7day.Size = new System.Drawing.Size(103, 57);
             this.btn7day.TabIndex = 6;
             this.btn7day.Text = "Last 7 Days";
-            this.btn7day.UseVisualStyleBackColor = true;
+            this.btn7day.UseVisualStyleBackColor = false;
             this.btn7day.Click += new System.EventHandler(this.btn7day_Click);
             // 
             // label4
@@ -232,11 +246,53 @@
             this.lbl_inven.TabIndex = 5;
             this.lbl_inven.Text = "label1";
             // 
+            // dgv_stock_qty
+            // 
+            this.dgv_stock_qty.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgv_stock_qty.Location = new System.Drawing.Point(475, 245);
+            this.dgv_stock_qty.Name = "dgv_stock_qty";
+            this.dgv_stock_qty.Size = new System.Drawing.Size(442, 223);
+            this.dgv_stock_qty.TabIndex = 6;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Century Gothic", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.DimGray;
+            this.label1.Location = new System.Drawing.Point(479, 197);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(224, 32);
+            this.label1.TabIndex = 10;
+            this.label1.Text = "Low Stock Items";
+            // 
+            // dgv_selling_p
+            // 
+            this.dgv_selling_p.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgv_selling_p.Location = new System.Drawing.Point(41, 245);
+            this.dgv_selling_p.Name = "dgv_selling_p";
+            this.dgv_selling_p.Size = new System.Drawing.Size(369, 223);
+            this.dgv_selling_p.TabIndex = 11;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Century Gothic", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.DimGray;
+            this.label2.Location = new System.Drawing.Point(50, 197);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(275, 32);
+            this.label2.TabIndex = 12;
+            this.label2.Text = "Most Selling Product";
+            // 
             // dashboard_inventory
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(30)))), ((int)(((byte)(54)))));
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.dgv_selling_p);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.dgv_stock_qty);
             this.Controls.Add(this.lbl_inven);
             this.Controls.Add(this.panel2);
             this.Name = "dashboard_inventory";
@@ -246,6 +302,8 @@
             this.panel2.PerformLayout();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_stock_qty)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_selling_p)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -269,5 +327,9 @@
         private System.Windows.Forms.Label lblcus;
         private System.Windows.Forms.Label label3;
         public System.Windows.Forms.Label lbl_inven;
+        private System.Windows.Forms.DataGridView dgv_stock_qty;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.DataGridView dgv_selling_p;
+        private System.Windows.Forms.Label label2;
     }
 }

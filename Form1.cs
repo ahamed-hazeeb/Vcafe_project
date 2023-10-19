@@ -62,6 +62,7 @@ namespace Vcafe
                 btn_userlog.Enabled = false;
                 btn_product.Enabled = false;
             }
+            panel_change();
 
         }
 
@@ -348,7 +349,7 @@ namespace Vcafe
         }
 
         private void pnl_main_Paint(object sender, PaintEventArgs e)
-        {
+        {/*
    
             if (lbl_position.Text == "Admin")
             {
@@ -394,6 +395,69 @@ namespace Vcafe
                 {
                     dashboard_cashier._dash_cahier.BringToFront();
                 }
+            }
+            */
+        }
+        public void panel_change()
+        {
+            if (lbl_position.Text == "Admin")
+            {
+
+
+                if (!pnl_main.Controls.Contains(dashboard._dash))
+                {
+                    pnl_main.Controls.Add(dashboard._dash);
+                    dashboard._dash.Dock = DockStyle.Fill;
+                    dashboard._dash.BringToFront();
+                }
+                else
+                {
+                    dashboard._dash.BringToFront();
+                }
+            }
+            else if (lbl_position.Text == "Inventory")
+            {
+
+                if (!pnl_main.Controls.Contains(dashboard_inventory._dash_inventory))
+                {
+                    pnl_main.Controls.Add(dashboard_inventory._dash_inventory);
+                    dashboard_inventory._dash_inventory.Dock = DockStyle.Fill;
+                    dashboard_inventory._dash_inventory.BringToFront();
+
+                }
+                else
+                {
+                    dashboard_inventory._dash_inventory.BringToFront();
+                }
+            }
+            else if (lbl_position.Text == "Cashier")
+            {
+
+
+                if (!pnl_main.Controls.Contains(dashboard_cashier._dash_cahier))
+                {
+                    pnl_main.Controls.Add(dashboard_cashier._dash_cahier);
+                    dashboard_cashier._dash_cahier.Dock = DockStyle.Fill;
+                    dashboard_cashier._dash_cahier.BringToFront();
+                }
+                else
+                {
+                    dashboard_cashier._dash_cahier.BringToFront();
+                }
+            }
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            DialogResult rs = MessageBox.Show("Are You sure want to Close", "Exit", MessageBoxButtons.YesNo, MessageBoxIcon.Hand);
+            if (rs == DialogResult.Yes)
+            {
+                con.Open();
+                string sql = "INSERT INTO login_info  VALUES('" + lbl_name.Text + "',getdate(),'Logout')";
+                SqlCommand cmnd = new SqlCommand(sql, con);
+                cmnd.ExecuteNonQuery();
+                con.Close();
+                Application.Exit();
             }
         }
     }

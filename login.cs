@@ -81,5 +81,23 @@ namespace Vcafe
         {
 
         }
+
+        private void btn_close_Click(object sender, EventArgs e)
+        {
+            DialogResult rs = MessageBox.Show("Are You sure want to Close", "Exit", MessageBoxButtons.YesNo, MessageBoxIcon.Hand);
+            if (rs == DialogResult.Yes)
+            {
+               
+                Application.Exit();
+            }
+        }
+
+       
+
+        private void btn_clear_Click(object sender, EventArgs e)
+        {
+            txt_username.Text = "";
+            txt_password.Text = "";
+        }
     }
 }

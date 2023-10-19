@@ -35,11 +35,21 @@ namespace Vcafe
 
         private void autoin()
         {
-
-
+            
+            //auto get the max no in the bill information table 
             SqlCommand cmd = new SqlCommand("select max(log_id)+1 from inventory_data_log", con);
-            int i = Convert.ToInt32(cmd.ExecuteScalar());
-            txt_logid.Text = i.ToString();
+            object result = cmd.ExecuteScalar();
+            //if the  table bill_no column is not null
+            if (result != DBNull.Value)
+            {
+                int i = Convert.ToInt32(result);
+                txt_logid.Text = i.ToString();
+            }
+            //if the  table bill_no column is null
+            else
+            {
+                txt_logid.Text = "1";
+            }
 
         }
         public void stock_update()
@@ -99,7 +109,7 @@ namespace Vcafe
         }
         public void stock_id()
         {
-               String query_search = "select id,name,category,unit,unit_price from stock where id ='" + cmb_id.Text + "'";
+               String query_search = "select id,name,category,qty,unit,unit_price from stock where id ='" + cmb_id.Text + "'";
             con.Open();
             SqlCommand cmnd = new SqlCommand(query_search, con);
                 SqlDataReader r = cmnd.ExecuteReader();
@@ -110,9 +120,9 @@ namespace Vcafe
                 
                     txt_name.Text = r[1].ToString();
                     cmb_category.Text = r[2].ToString();
-                  
-                    txt_unit.Text = r[3].ToString();
-                    txt_uprice.Text = r[4].ToString();
+                    txt_qty.Text = r[3].ToString();
+                    txt_unit.Text = r[4].ToString();
+                    txt_uprice.Text = r[5].ToString();
 
 
 
@@ -228,10 +238,11 @@ namespace Vcafe
 
         private void btn_insert_Click(object sender, EventArgs e)
         {
+            con.Open();
             if (txt_logid.Text !="" && cmb_id.Text != "" && txt_name.Text != "" && txt_qty.Text != "" )
             {
                 
-            con.Open();
+         
             int id = Convert.ToInt32(cmb_id.Text);
             int qty = Convert.ToInt32(txt_qty.Text);
             float punit = (float)Convert.ToDouble(txt_uprice.Text);
@@ -261,7 +272,7 @@ namespace Vcafe
                         MessageBox.Show("Item Inserted Sucessfully.", "Inserted", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
                         autoin();
-                      
+                        
                         txt_name.Clear();
                         // cmb_category.SelectedIndex=0;
                         datet.Value = DateTime.Now;
@@ -281,8 +292,8 @@ namespace Vcafe
                         cmds.ExecuteNonQuery();
                         MessageBox.Show("Item Updated Sucessfully.", "Update", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
-                        autoin(); 
-                    
+                        autoin();
+                        inven_dis();
                         txt_name.Clear();
                         // cmb_category.SelectedIndex=0;
                         datet.Value = DateTime.Now;
@@ -298,6 +309,7 @@ namespace Vcafe
                 MessageBox.Show("insert the detatils.", "INSERT", MessageBoxButtons.OK, MessageBoxIcon.Hand);
 
             }
+            con.Close();
         }
 
         private void inventroyp_Load(object sender, EventArgs e)
@@ -484,6 +496,11 @@ namespace Vcafe
             dtp_end.Enabled = true;
             txt_search.Enabled = false;
             cmb_type.Enabled = false;
+        }
+
+        private void txt_logid_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
     }

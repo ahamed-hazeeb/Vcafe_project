@@ -150,6 +150,57 @@ namespace Vcafe
 
             con.Close();
         }
+
+        void StyleDatagridview()
+        {
+
+            dgv_stock_qty.BorderStyle = BorderStyle.None;
+            dgv_stock_qty.AlternatingRowsDefaultCellStyle.BackColor = Color.FromArgb(238, 239, 249);
+            dgv_stock_qty.CellBorderStyle = DataGridViewCellBorderStyle.SingleHorizontal;
+            dgv_stock_qty.DefaultCellStyle.SelectionBackColor = Color.SeaGreen;
+            dgv_stock_qty.DefaultCellStyle.SelectionForeColor = Color.WhiteSmoke;
+            dgv_stock_qty.EnableHeadersVisualStyles = false;
+            dgv_stock_qty.ColumnHeadersBorderStyle = DataGridViewHeaderBorderStyle.None;
+            dgv_stock_qty.ColumnHeadersDefaultCellStyle.Font = new Font("Century Gothic", 12);
+            dgv_stock_qty.RowTemplate.Height = 30;
+            dgv_stock_qty.ColumnHeadersDefaultCellStyle.BackColor = Color.FromArgb(37, 37, 38);
+            dgv_stock_qty.ColumnHeadersDefaultCellStyle.ForeColor = Color.White;
+            dgv_stock_qty.BackgroundColor = Color.FromArgb(46, 51, 73);
+
+            dgv_selling_p.BorderStyle = BorderStyle.None;
+            dgv_selling_p.AlternatingRowsDefaultCellStyle.BackColor = Color.FromArgb(238, 239, 249);
+            dgv_selling_p.CellBorderStyle = DataGridViewCellBorderStyle.SingleHorizontal;
+            dgv_selling_p.DefaultCellStyle.SelectionBackColor = Color.SeaGreen;
+            dgv_selling_p.DefaultCellStyle.SelectionForeColor = Color.WhiteSmoke;
+            dgv_selling_p.EnableHeadersVisualStyles = false;
+            dgv_selling_p.ColumnHeadersBorderStyle = DataGridViewHeaderBorderStyle.None;
+            dgv_selling_p.ColumnHeadersDefaultCellStyle.Font = new Font("Century Gothic", 12);
+            dgv_selling_p.RowTemplate.Height = 30;
+            dgv_selling_p.ColumnHeadersDefaultCellStyle.BackColor = Color.FromArgb(37, 37, 38);
+            dgv_selling_p.ColumnHeadersDefaultCellStyle.ForeColor = Color.White;
+            dgv_selling_p.BackgroundColor = Color.FromArgb(46, 51, 73);
+            dgv_selling_p.Columns[1].AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells;
+
+        }
+        public void stock_dis()
+        {
+
+
+            SqlDataAdapter sqldata = new SqlDataAdapter("SELECT id as ID,name as Name,qty as Qty,unit as Unit  FROM stock where qty <=100", con);
+            DataTable dtbl = new DataTable();
+            sqldata.Fill(dtbl);
+            dgv_stock_qty.DataSource = dtbl;
+
+        }
+        public void selling_dis()
+        {
+
+            SqlDataAdapter sqldata = new SqlDataAdapter("SELECT top(8) p_id as ID, name as Name, COUNT(*) as count FROM bill_order GROUP BY p_id, name HAVING COUNT(*) > 1 ORDER BY count DESC", con);
+            DataTable dtbl = new DataTable();
+            sqldata.Fill(dtbl);
+            dgv_selling_p.DataSource = dtbl;
+
+        }
         private void btn_get_Click(object sender, EventArgs e)
         {
 
@@ -242,6 +293,9 @@ namespace Vcafe
             lbl_dstart.Text = date_start.Text;
             lbl_dend.Text = date_end.Text;
             sale_profit();
+            stock_dis();
+            selling_dis();
+            StyleDatagridview();
         }
 
         private void lbl_dstart_Click(object sender, EventArgs e)
